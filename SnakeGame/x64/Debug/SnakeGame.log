@@ -1,0 +1,90 @@
+﻿  GameManager.cpp
+  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2661: 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple': no overloaded function takes 2 arguments
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(432,5): message : could be 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,std::pair<_First,_Second> &&)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,std::pair<_First,_Second> &&)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(426,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const std::pair<_First,_Second> &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const std::pair<_First,_Second> &)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(404,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<_Types2...> &&)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<_Types2...> &&)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(396,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<_Types2...> &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<_Types2...> &)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(379,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<void (__cdecl GameManager::* )(void),GameManager> &&)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,std::tuple<void (__cdecl GameManager::* )(void),GameManager> &&)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(375,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<void (__cdecl GameManager::* )(void),GameManager> &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const std::tuple<void (__cdecl GameManager::* )(void),GameManager> &)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(369,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,_This2 &&,_Rest2 &&...)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,_This2 &&,_Rest2 &&...)': expects 4 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(361,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const _This &,const GameManager &)'
+          with
+          [
+              _This=void (__cdecl GameManager::* )(void)
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &,const _This &,const GameManager &)': expects 4 arguments - 2 provided
+          with
+          [
+              _This=void (__cdecl GameManager::* )(void)
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(354,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::allocator_arg_t,const _Alloc &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,56): message : 'initializing': cannot convert from '_Ty' to 'std::allocator_arg_t'
+          with
+          [
+              _Ty=void (__cdecl GameManager::* )(void)
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,56): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(338,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::pair<_Other1,_Other2> &&) noexcept(<expr>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::pair<_Other1,_Other2> &&) noexcept(<expr>)': expects 1 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(332,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(const std::pair<_Other1,_Other2> &) noexcept(<expr>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(const std::pair<_Other1,_Other2> &) noexcept(<expr>)': expects 1 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(310,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::tuple<_Types1...> &&) noexcept(<expr>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(std::tuple<_Types1...> &&) noexcept(<expr>)': expects 1 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(302,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(const std::tuple<_Types1...> &) noexcept(<expr>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(const std::tuple<_Types1...> &) noexcept(<expr>)': expects 1 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(283,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_This2 &&,_Rest2 &&...) noexcept(<expr>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_This2 &&,_Rest2 &&...) noexcept(<expr>)': could not deduce template argument for '__formal'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(274,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(const _This &,const GameManager &) noexcept(<expr>)'
+          with
+          [
+              _This=void (__cdecl GameManager::* )(void)
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(const _This &,const GameManager &) noexcept(<expr>)': could not deduce template argument for '__formal'
+          with
+          [
+              _This=void (__cdecl GameManager::* )(void)
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(267,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(void) noexcept(<expr>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(void) noexcept(<expr>)': expects 0 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(260,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,const _Alloc &,_Tpl &&)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,const _Alloc &,_Tpl &&)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(257,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,const _Alloc &,_Tpl &&,std::integer_sequence<size_t,_Indexes2...>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,const _Alloc &,_Tpl &&,std::integer_sequence<size_t,_Indexes2...>)': expects 4 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(251,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,const _Alloc &,_This2 &&,_Rest2 &&...)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,const _Alloc &,_This2 &&,_Rest2 &&...)': expects 4 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(245,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,_Tpl &&)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,_Tpl &&)': could not deduce template argument for '__formal'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(242,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,_Tpl &&,std::integer_sequence<size_t,_Indexes1...>)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,_Tpl &&,std::integer_sequence<size_t,_Indexes1...>)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\tuple(238,5): message : or       'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,_This2 &&,_Rest2 &&...)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'std::tuple<void (__cdecl GameManager::* )(void),GameManager>::tuple(_Tag,_This2 &&,_Rest2 &&...)': could not deduce template argument for '__formal'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : while trying to match the argument list '(_Ty, GameManager)'
+          with
+          [
+              _Ty=void (__cdecl GameManager::* )(void)
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\thread(68): message : see reference to function template instantiation 'std::unique_ptr<_Tuple,std::default_delete<_Tuple>> std::make_unique<_Tuple,_Ty,GameManager&,0>(_Ty &&,GameManager &)' being compiled
+          with
+          [
+              _Ty=void (__cdecl GameManager::* )(void)
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\thread(87): message : see reference to function template instantiation 'void std::thread::_Start<_Ty,GameManager&>(_Fn &&,GameManager &)' being compiled
+          with
+          [
+              _Ty=void (__cdecl GameManager::* )(void),
+              _Fn=void (__cdecl GameManager::* )(void)
+          ]
+D:\Programming_practice\SFML_C++\SnakeGame\SnakeGame\main.cpp(21,65): message : see reference to function template instantiation 'std::thread::thread<void(__cdecl GameManager::* )(void),GameManager&,0>(_Fn &&,GameManager &)' being compiled
+          with
+          [
+              _Fn=void (__cdecl GameManager::* )(void)
+          ]
+  Generating Code...

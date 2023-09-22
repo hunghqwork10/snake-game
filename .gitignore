@@ -1,0 +1,27 @@
+# Ignored files and directories
+
+# Build artifacts
+/build/
+/bin/
+/Debug/
+/Release/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+
+# Visual Studio specific files and directories
+/.vs/
+/.suo
+/.user
+/*.sdf
+/*.opensdf
+/*.VC.db
+/*.VC.opendb
+
+# macOS specific files
+.DS_Store
+
+# Compiled Python files
+__pycache__/
