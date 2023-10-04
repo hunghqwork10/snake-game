@@ -2,8 +2,12 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <functional>
 
 using namespace sf;
+
+//// forward declaration
+//class GameManager;
 
 class SnakeSegment : public sf::Drawable, public sf::Transformable {
 private:
@@ -20,7 +24,7 @@ public:
 		segmentShape.setSize(sf::Vector2f(width, height));
 	}
 
-	float getWidth() {
+	float getWidth() const {
 		return this->width;
 	}
 
@@ -28,12 +32,16 @@ public:
 		this->width = _value;
 	}
 
-	float getHeight() {
+	float getHeight() const {
 		return this->height;
 	}
 
 	void setHeight(float _value) {
 		this->height = _value;
+	}
+
+	sf::FloatRect getGlobalBound() const {
+		return segmentShape.getGlobalBounds();
 	}
 
 	// Inherited via Drawable
@@ -49,6 +57,9 @@ public:
 		Up, Down, Left, Right
 	};
 
+	// khai báo event
+	std::function<void()> onEachStepMoved;
+
 private:
 	std::vector<SnakeSegment> segments; // danh sach cac segment cua con ran
 	SnakeSegment* head;
@@ -63,6 +74,11 @@ private:
 
 public:
 	Snake(float width, float height, sf::Color color, float speed);
+	~Snake();
+
+	SnakeSegment* getSnakeHead() {
+		return this->head;
+	}
 
 	void moveSnake();
 

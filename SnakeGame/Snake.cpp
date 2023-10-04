@@ -35,6 +35,11 @@ Snake::Snake(float width, float height, sf::Color color, float speed) {
 	head->setFillColor(sf::Color::Yellow);
 }
 
+Snake::~Snake()
+{
+	//delete head;
+}
+
 void Snake::draw(RenderTarget& target, RenderStates states) const
 {
 	for (int i = 0; i < segments.size(); i++) {
@@ -82,6 +87,10 @@ void Snake::update(float deltaTime) {
 			// cập nhật previousPosition để sử dụng cho đốt tiếp theo
 			previousPosition = tempPosition;
 		}
+
+		// mỗi lần move thì kiểm tra xem phần đầu đã collide với fruit chưa
+		// bắn event onEachStepMoved
+		onEachStepMoved();
 
 		elapsed = 0;
 	}
