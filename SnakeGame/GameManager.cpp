@@ -58,6 +58,7 @@ void GameManager::checkHeadCollideFruit()
 	SnakeSegment* snakeHead = snake->getSnakeHead();
 	if (snakeHead->getPosition() == fruitShape->getPosition()) {
 		std::cout << "Collided..." << std::endl;
+		snake->increaseOneSegment();
 		generateNewFruit();
 		// invoke event
 		//onHeadCollideFruit();

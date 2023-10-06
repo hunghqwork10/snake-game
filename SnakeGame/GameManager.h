@@ -50,4 +50,6 @@ public:
 	void generateNewFruit();
 	
 	void checkHeadCollideFruit();
+
+	//void increaseOneSnakeSegment();
 };

@@ -14,12 +14,9 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(GameConfig::WINDOW_WIDTH, GameConfig::WINDOW_HEIGHT), "Snake Game");
     
-    GameManager gameManager;
-
-    /*SnakeSegment snakeSegment(50, 50);
-    snakeSegment.setFillColor(sf::Color::Red);*/
+    GameManager* gameManager = new GameManager();
     
-    //std::thread task(&GameManager::delayAndDestroy, std::ref(gameManager));
+    //std::thread task(&GameManager::delayAndDestroy, std::ref(*gameManager));
     //task.detach(); // tách luồng ra khỏi đối tượng task
 
     LevelBorder levelBorder;
@@ -41,16 +38,16 @@ int main()
         sf::Time deltaTimeTimer = clock.restart(); // lấy thời gian đã trôi qua và khởi động lại
         float deltaTime = deltaTimeTimer.asSeconds();
 
-        gameManager.moveControl(deltaTime);
-        gameManager.Update(deltaTime);
+        gameManager->moveControl(deltaTime);
+        gameManager->Update(deltaTime);
 
         // render lên màn hình tất cả những gì đã tính toán xong
         window.clear();
-        gameManager.drawFruit(window);
-        gameManager.drawSnake(window);
+        gameManager->drawFruit(window);
+        gameManager->drawSnake(window);
         window.display();
     }
 
-    //delete gameManager;
+    delete gameManager;
     return 0;
 }

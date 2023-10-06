@@ -4,6 +4,8 @@
 #include <iostream>
 #include <functional>
 
+#include "GameConstant.h"
+
 using namespace sf;
 
 //// forward declaration
@@ -86,6 +88,8 @@ public:
 	void update(float deltaTime);
 
 	void changeDirection(Direction direction);
+
+	void increaseOneSegment();
 
 	// Inherited via Drawable
 	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

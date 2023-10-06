@@ -20,7 +20,7 @@ Snake::Snake(float width, float height, sf::Color color, float speed) {
 	this->currentDirection = Down;
 
 	elapsed = 0;
-	delay = 0.5f;
+	delay = 0.35f;
 
 	// tạo ra 3 đoạn đầu tiên cho con rắn giữa màn hình
 	for (int i = 0; i < 3; i++) {
@@ -37,7 +37,6 @@ Snake::Snake(float width, float height, sf::Color color, float speed) {
 
 Snake::~Snake()
 {
-	//delete head;
 }
 
 void Snake::draw(RenderTarget& target, RenderStates states) const
@@ -56,6 +55,7 @@ void Snake::update(float deltaTime) {
 	if (elapsed > delay) {
 		// lưu trạng thái của đốt đầu trước khi di chuyển
 		sf::Vector2f previousPosition = head->getPosition();
+		//std::cout << "previousPosition: " << previousPosition.x << " : " << previousPosition.y << std::endl;
 
 		// di chuyển con rắn sang ô tiếp theo
 		//std::cout << head->getHeight() << std::endl;
@@ -99,4 +99,15 @@ void Snake::update(float deltaTime) {
 void Snake::changeDirection(Direction direction)
 {
 	currentDirection = direction;
+}
+
+void Snake::increaseOneSegment()
+{
+	SnakeSegment segment(GameConstant::SEGMENT_WIDTH, GameConstant::SEGMENT_HEIGHT);
+	segment.setFillColor(sf::Color::Green);
+	segment.setPosition(segments.back().getPosition());
+	segments.push_back(segment);
+
+	// cập nhật lại tham chiếu của con trỏ head đến phần từ đầu tiên của mảng, đảm bảo không bị tham chiếu sai khí mới cập nhật mảng
+	head = &segments[0];
 }
