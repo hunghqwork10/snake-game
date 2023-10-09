@@ -13,6 +13,7 @@ void moveControl(Snake& snake, float speed, float deltaTime);
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(GameConfig::WINDOW_WIDTH, GameConfig::WINDOW_HEIGHT), "Snake Game");
+    window.setFramerateLimit(60);
     
     GameManager* gameManager = new GameManager();
     
