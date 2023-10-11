@@ -1,4 +1,5 @@
 ﻿#include "GameManager.h"
+#include <imgui.h>
 
 GameManager::GameManager()
 {
