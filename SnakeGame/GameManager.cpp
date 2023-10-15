@@ -61,7 +61,7 @@ void GameManager::checkHeadCollideFruit()
 		std::cout << "Collided..." << std::endl;
 		snake->increaseOneSegment();
 		generateNewFruit();
-		// invoke event
+		//// invoke event
 		//onHeadCollideFruit();
 	}
 }
