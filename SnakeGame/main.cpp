@@ -3,6 +3,7 @@
 #include "Application.h"
 
 // khai báo hàm (function declaration)
+// ...
 
 int main()
 {

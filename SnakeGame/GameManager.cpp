@@ -1,7 +1,6 @@
 ﻿#include "GameManager.h"
-#include <imgui.h>
 
-GameManager::GameManager()
+GameManager::GameManager() : score(0)
 {
 	snake = new Snake(GameConstant::SEGMENT_WIDTH, GameConstant::SEGMENT_HEIGHT, sf::Color::Green, 20);
 	// gán các event delegate
@@ -60,10 +59,16 @@ void GameManager::checkHeadCollideFruit()
 	if (snakeHead->getPosition() == fruitShape->getPosition()) {
 		std::cout << "Collided..." << std::endl;
 		snake->increaseOneSegment();
+		increaseScore();
 		generateNewFruit();
 		//// invoke event
 		//onHeadCollideFruit();
 	}
+}
+
+void GameManager::increaseScore()
+{
+	this->score++;
 }
 
 void GameManager::DestroyCurrentFruit() {

@@ -30,7 +30,5 @@ private:
 	GameManager* gameManager;
 	LevelBorder* levelBorder;
 	sf::Clock clock;
-
-	int score;
 };
 

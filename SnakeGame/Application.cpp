@@ -1,7 +1,6 @@
 ﻿#include "Application.h"
 
 Application::Application() : window(sf::VideoMode(GameConfig::WINDOW_WIDTH, GameConfig::WINDOW_HEIGHT), "Snake Game")
-, score(0)
 {
 	window.setFramerateLimit(60);
 	ImGui::SFML::Init(window);
@@ -50,7 +49,7 @@ void Application::update()
     ImGui::SetWindowPos(ImVec2(0, 0), ImGuiCond_Always);
 
     // display the score
-    ImGui::Text("Score: %d", score);
+    ImGui::Text("Score: %d", gameManager->getScore());
 
     ImGui::End();
 
@@ -69,4 +68,3 @@ void Application::render()
 
     window.display();
 }
-

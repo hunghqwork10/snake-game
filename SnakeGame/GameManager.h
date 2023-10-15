@@ -19,10 +19,16 @@ class GameManager {
 private:
 	std::unique_ptr<sf::RectangleShape> fruitShape; // sử dụng smart pointer
 	Snake* snake;
+
+	int score;
 public:
 	// khai báo các event
 	//void (*onHeadCollideFruit)();
 	std::function<void()> onHeadCollideFruit;
+
+	int getScore() {
+		return score;
+	}
 
 public:
 	GameManager();
@@ -51,5 +57,5 @@ public:
 	
 	void checkHeadCollideFruit();
 
-	//void increaseOneSnakeSegment();
+	void increaseScore();
 };
